@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- Put custom resources for the website here -->
+        <template id="assets_frontend" inherit_id="website.assets_frontend" name="base_external_js_css">
+            <xpath expr="." position="inside">
+                <!-- 
+                CSS:
+                <link href="http://www.mysite.com/mystyle.css" rel="stylesheet"/>
+                
+                JS:
+                <script type="text/javascript" src="http://www.mysite.com/myscript.js"></script>
+                -->
+            </xpath>
+        </template>
+    </data>
+</openerp>

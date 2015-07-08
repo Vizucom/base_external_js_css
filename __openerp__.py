@@ -18,11 +18,14 @@
     'version': '0.1',
     'author': 'Vizucom Oy',
     'website': 'http://www.vizucom.com',
-    'depends': ['web'],
+    'depends': ['website'],
     'description': """
 Load external JS/CSS files
 ==========================
- * Allows you to specify a list of external JS/CSS files to load directly to <head> from e.g. another server.
+ * Allows you to specify a list of external JS/CSS files to load from e.g. another server.
+ * Doing this in 8.0 is a lot simpler than in 7.0, now you just need to extend a template with the necessary <link> and <script> tags.
 """,
-    'data': [],
+    'data': [
+        'views/external_resources.xml',
+    ],
 }
